@@ -42,28 +42,33 @@ nav{
     animation:blur-in-expand 0.4s linear both; /*llamada a la animacion logo pero con menos tiempo */
 }
 .login {
+    color: #000000;
+    padding: 10px;
     margin-left: auto; 
-    width: auto;
+    width: 130px;
     margin-right: 60px;
-    font-family:'Trebuchet MS';
+    font-weight: 500;
+    font-family: 'Trebuchet MS';
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    display: inline-block; 
+    text-align: center;
 }
 
 .login a {
-    background-color: #000;
-    color: #fff; 
-    padding: 15px 25px; 
-    border-radius: 5px; 
-    text-decoration: none; 
+    color: black; 
+    text-decoration: none;
 }
 
-.login a:hover {
-    background-color: #4b4b4b; 
-    animation:shadow-drop-center 0.4s linear both
+.login:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Aclarar el fondo al pasar el mouse */
 }
 
 
 
- @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 rgba(255, 255, 255, 0.55)}}
+
+
 
 
 
@@ -180,7 +185,6 @@ header.abajo ul li a{
     height: 150px;
     border-radius: 10%;
     background-color: transparent;
-    border: 2px solid #000;
     margin-bottom: 10px;
     padding: 10px;
     margin-top: 25px;
@@ -221,7 +225,7 @@ header.abajo ul li a{
 .contenedor-preguntas {
 	display: none;
 	grid-template-columns: 1fr;
-	gap: 40px;
+	gap: 20px;
 }
 
 .contenedor-preguntas.activo {
@@ -229,7 +233,7 @@ header.abajo ul li a{
 }
 .contenedor-pregunta {
     background: #fff;
-    padding: 20px; 
+    padding: 10px; 
     border: 2px solid transparent;
     border-radius: 10px;
     overflow: hidden;
@@ -245,7 +249,7 @@ header.abajo ul li a{
 	border: 2px solid var(--primario);
 }
 .pregunta {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 15px; 
     line-height: 1.5;
     display: flex;
@@ -272,7 +276,7 @@ header.abajo ul li a{
 
 .contenedor-pregunta.activa .respuesta {
 	opacity: 1;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .contenedor-pregunta.activa img {
@@ -285,8 +289,8 @@ header.abajo ul li a{
     padding: 20px; 
     border: 2px solid #ccc;
     border-radius: 10px; 
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 

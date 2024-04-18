@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    position: relative; /* Para que el pseudo-elemento se posicione correctamente */
+    background-color: rgb(218, 231, 250); /* Color de fondo del cuerpo */
+}
+
+body::after {
+    
+    content: ""; /* Contenido del pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto en relación con el cuerpo */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("img/logo-solo.png");
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position:auto; /* Posicionamiento de la imagen de fondo */
+    opacity: 0.2; /* Opacidad del fondo de la imagen */
+    z-index: -1; /* Para que el pseudo-elemento esté detrás del contenido del cuerpo */
+    justify-content: center;
+}
+
+
+.navbar {
+    left: 0;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Coloca la barra de navegación en la parte superior de la ventana */
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
+  
+}
+
+
+
+
+.logo {
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:50%
+
+}
+
+/*Menú lateral*/
+
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #007bff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+    z-index: 1000;
+    transform: translateX(0); /* Asegura que el menú esté visible desde el principio */
+    overflow-y: auto; 
+}
+
+
+.cont-menu nav {
+    margin-top: 60px;
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border: solid 1px rgb(85, 160, 211)
+ 
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid #ffffff;
+    background: #0056b3;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 1000; /* Asegurar que la etiqueta de cierre del menú esté sobre el botón */
+}
+
+
+p {
+    color: #007bff;
+   
+}
+
+h3{color: #294ef5;}
+
+.cont-menu nav .titulos-nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:black;
+    margin-left: 10px;
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/*Contenido de la página*/
+.content {
+    padding-top: 100px;
+    margin-top: 30px;
+    margin-left: 400px; 
+}
+
+.navigation-buttons .nextButton {
+    background-color: #ff000d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.navigation-buttons .nextButton:hover {
+    background-color: #CC0000;
+}
+.pdf {
+    width: 60%; 
+    height: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    margin: 20px 0;
+
+
+}
+
+.video-container{
+    width: 650px;
+    height: 350px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    margin: 20px 0;
+
+
+}
+
+.video-container-examenAptis{
+    width: 560px;
+    height: 315px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0;
+
+}
+
+
